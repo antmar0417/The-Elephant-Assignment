@@ -1,6 +1,6 @@
-INSERT MANDATORY GIF
+![](https://media.giphy.com/media/xTlJqQwva46dy/giphy.gif)
 
-# Project Title
+# Car Sales Site
 
 Text about the project and why it exists. This would also be a great place to link the project on One.com.
 
