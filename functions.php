@@ -4,5 +4,6 @@ declare(strict_types=1);
 
 function kwToHorsepower(float $power): float
 {
-    return $power * 1.36;
+    $power = floatval(number_format($power * 1.36, 1));
+    return $power;
 }
