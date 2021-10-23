@@ -6,6 +6,7 @@
   --font-color: #313131;
   --title-color: #ff3300;
   --a-color: blue;
+  --text-shadow: rgb(143, 0, 0);
 }
 
 .site-title {
@@ -14,8 +15,8 @@
   letter-spacing: 4px;
   border-bottom-style: solid;
   border-color: var(--accent-color);
-  text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000,
-    -1px -1px 0 #000;
+  text-shadow: -1px 1px 0 var(--text-shadow), 1px 1px 0 var(--text-shadow),
+    1px -1px 0 var(--text-shadow), -1px -1px 0 #000;
 }
 
 a {
@@ -75,6 +76,7 @@ img {
 .cars .car .price {
   color: var(--accent-color);
   font-weight: bold;
+  margin-left: 20px;
 }
 
 .cars .car p:not(price) {
