@@ -22,7 +22,7 @@
     <section class="cars">
         <?php foreach ($cars as $car) : ?>
             <div class="car">
-                <div class="two-column-wrapper">
+                <div class="two-column-wrapper" onclick="location.href='https://www.blocket.se/annons/kalmar/ford_focus_kombi_1_8_flexifuel_trend_125hk/98144546'">
                     <div class="image-wrapper">
                         <img src="<?php echo $car['image'] ?>" alt="<?php echo $car['make'] . $car['model'] ?>" />
                     </div>
