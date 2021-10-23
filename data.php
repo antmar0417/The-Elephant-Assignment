@@ -2,6 +2,9 @@
 
 declare(strict_types=1);
 
+$title = 'Cars for sale';
+$siteTitle = 'Cars.com';
+
 $cars = [
     ['make' => 'Ford', 'model' => 'Focus', 'Year' => 2005, 'kw' => 100, 'vinId' => 'JT164STJ200017216', 'color' => 'Silver', 'image' => 'images/Ford Focus.jpeg', 'price' => 15000],
     ['make' => 'Volvo', 'model' => 'V70', 'Year' => 2008, 'kw' => 110, 'vinId' => 'JT164STJ210017216', 'color' => 'Grå', 'image' => 'images/Volvo V70.jpeg', 'price' => 70000],
