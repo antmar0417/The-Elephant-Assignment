@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Source+Sans+Pro:ital,wght@1,200&display=swap');
+
+:root {
+  --accent-color: #000000;
+  --bg-color: #f3f3f3;
+  --font-color: #313131;
+  --title-color: #ff3300;
+  --a-color: blue;
+}
+
+.site-title {
+  color: var(--title-color);
+  font-size: 250%;
+  letter-spacing: 4px;
+  border-bottom-style: solid;
+  border-color: var(--accent-color);
+  text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000,
+    -1px -1px 0 #000;
+}
+
+a {
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: var(--a-color);
+  text-decoration: none;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--font-color);
+  font-family: 'Open Sans', sans-serif;
+}
+
+footer,
+main {
+  padding: 24px 36px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.four-column-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-left: 30px;
+}
+
+.four-column-wrapper,
+a + p {
+  color: gray;
+}
+
+.two-column-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+img {
+  max-width: 50%;
+  max-height: auto;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+
+.cars .car {
+  padding: 24px;
+  margin-bottom: 16px;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.cars .car:hover {
+  box-shadow: 2px 2px 4px 4px rgb(117, 116, 117, 116);
+}
+
+.cars .car .price {
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+.cars .car p:not(price) {
+  font-size: 24px;
+}
+
+footer a:last-child {
+  color: var(--accent-color);
+}
