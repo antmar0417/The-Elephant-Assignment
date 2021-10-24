@@ -5,18 +5,11 @@
     <h1 class="site-title"><?php echo $siteTitle; ?></h1>
     <p>Välj märke och bilmodell nedan.</p>
     <div class="four-column-wrapper">
-        <p>
-            <a href="https://en.wikipedia.org/wiki/Big_cat">Audi</a>&nbsp;(1st)
-        </p>
-        <p>
-            <a href="https://en.wikipedia.org/wiki/Big_cat">Ford</a>&nbsp;(3st)
-        </p>
-        <p>
-            <a href="https://en.wikipedia.org/wiki/Big_cat">Volvo</a>&nbsp;(1st)
-        </p>
-        <p>
-            <a href="https://en.wikipedia.org/wiki/Big_cat">Volkswagen</a>&nbsp;(1st)
-        </p>
+        <?php foreach (array_unique(getCarBrand($cars)) as $make) : ?>
+            <p>
+                <a <?php if ($make === 'Audi') : ?> href="./audi.php" <?php elseif ($make === 'Ford') : ?> href="./ford.php" <?php endif; ?>><?php echo $make ?></a>&nbsp;(1st)
+            </p>
+        <?php endforeach; ?>
     </div>
     <h2>Bilar till salu</h2>
     <section class="cars">
