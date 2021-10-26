@@ -1,5 +1,5 @@
 <footer>
-    <small>&copy; <?php echo $year ?>Privacy Policy</small>
+    <small> &copy; <?php echo $footerView ?></small>
 </footer>
 </body>
 
