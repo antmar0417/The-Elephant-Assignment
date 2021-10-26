@@ -7,11 +7,11 @@
     <div class="four-column-wrapper">
         <?php foreach (array_unique(getCarBrand($cars)) as $make) : ?>
             <p>
-                <a <?php if ($make === 'Audi') : ?> href="./audi.php" <?php elseif ($make === 'Ford') : ?> href="./ford.php" <?php endif; ?>><?php echo $make ?></a>&nbsp;(1st)
+                <a href="cars.php?make=<?php echo $make ?>"> <?php echo $make; ?> </a>
             </p>
         <?php endforeach; ?>
     </div>
-    <h2>Bilar till salu</h2>
+    <h2>Cars for sale</h2>
     <section class="cars">
         <?php foreach ($cars as $car) : ?>
             <div class="car">
