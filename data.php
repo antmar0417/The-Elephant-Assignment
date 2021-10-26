@@ -5,6 +5,7 @@ declare(strict_types=1);
 $title = 'Bilar till salu';
 $siteTitle = 'Cars.com';
 $year = date('Y');
+$footerView = $siteTitle . " " . $year;
 
 $cars = [
     ['make' => 'Ford', 'model' => 'Focus', 'Year' => 2005, 'kw' => 100, 'miles' => '15000', 'color' => 'Silver', 'image' => 'images/Ford Focus.jpeg', 'price' => 15000],
