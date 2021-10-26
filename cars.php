@@ -4,10 +4,6 @@
 <?php
 $renderCarBrand = $_GET['make'];
 ?>
-
-<p>
-    <?php echo $renderCarBrand; ?>
-</p>
 <main>
     <h1 class="site-title"><?php echo $siteTitle; ?></h1>
     <p>Välj bilmodell nedan.</p>
