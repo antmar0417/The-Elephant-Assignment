@@ -14,35 +14,21 @@ function getCarBrand(array $brands): array
     $makes = [];
 
     foreach ($brands as $brand) {
-        // if ($brand['make'] !== 'Ford') {
-        //     continue;
-        // }
         $makes[] = $brand['make'];
     }
     asort($makes);
     return $makes;
 }
 
-// $makes = getCarBrand($cars);
-
-
-// foreach (array_unique(getCarBrand($cars)) as $make) {
-//     echo $make . "\n";
-// }
-
-// echo count($makes);
-// var_dump(array_unique($makes));
-
-function getCarModel(array $models): array
+function getCarModel(array $models, string $carBrand): array
 {
     $carModels = [];
 
     foreach ($models as $model) {
-        $carModels[] = $model['model'];
+        if ($model['make'] === $carBrand) {
+            $carModels[] = $model['model'];
+        }
     }
     asort($carModels);
     return $carModels;
 }
-// $carModels = getCarModel($cars);
-
-// var_dump($carModels);
