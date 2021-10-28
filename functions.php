@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-// require __DIR__ . '/data.php';
 
 function kwToHorsepower(float $power): float
 {
@@ -26,6 +25,8 @@ function getCarModel(array $models, string $carBrand): array
 
     foreach ($models as $model) {
         if ($model['make'] === $carBrand) {
+            $carModels[] = $model['model'];
+        } elseif ($model['model'] === $carBrand) {
             $carModels[] = $model['model'];
         }
     }
