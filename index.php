@@ -11,7 +11,7 @@
             </p>
         <?php endforeach; ?>
     </div>
-    <h2>Cars for sale</h2>
+    <h2>Bilar till salu</h2>
     <section class="cars">
         <?php foreach ($cars as $car) : ?>
             <div class="car">
