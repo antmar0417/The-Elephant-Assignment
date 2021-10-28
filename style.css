@@ -4,9 +4,7 @@
   --accent-color: #000000;
   --bg-color: #f3f3f3;
   --font-color: #313131;
-  --title-color: #ff3300;
   --a-color: blue;
-  --text-shadow: rgb(143, 0, 0);
 }
 
 .site-title {
@@ -92,6 +90,35 @@ footer {
   text-align: center;
 }
 
-footer a:last-child {
-  color: var(--accent-color);
+@media screen and (max-width: 768px) {
+  .site-title {
+    font-size: 3em;
+  }
+
+  .four-column-wrapper {
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .two-column-wrapper {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-size: 12px;
+  }
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    margin-top: auto;
+  }
+
+  .cars .car p:not(price) {
+    font-size: 16px;
+    text-align: center;
+  }
 }
