@@ -27,7 +27,7 @@ $renderCarModel = $_GET['model'];
                             <ul>
                                 <li><?php echo $car['make'] . " " . $car['model'] ?></li>
                                 <li>Mil: <?php echo $car['miles'] ?></li>
-                                <li>Färg: <?php echo $car['color'] ?></li>
+                                <li>Årsmodell: <?php echo $car['year'] ?></li>
                                 <li>Hästkrafter: <?php echo kwToHorsepower($car['kw']); ?></li>
                             </ul>
                             <p class="price">Pris: <?php echo $car['price'] ?> kr</p>
