@@ -7,7 +7,7 @@
     <div class="four-column-wrapper">
         <?php foreach (array_unique(getCarBrand($cars)) as $make) : ?>
             <p>
-                <a href="cars.php?make=<?php echo $make ?>"> <?php echo $make; ?> </a>
+                <a href="models.php?make=<?php echo $make ?>"> <?php echo $make; ?> </a>
             </p>
         <?php endforeach; ?>
     </div>
