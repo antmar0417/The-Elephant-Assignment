@@ -1,5 +1,5 @@
 <footer>
-    <small> &copy; <?php echo $footerView ?></small>
+    <small> &copy; <?= $footerView ?></small>
 </footer>
 </body>
 
