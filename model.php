@@ -5,12 +5,12 @@
 $renderCarModel = $_GET['model'];
 ?>
 <main>
-    <h1 class="site-title"><?php echo $siteTitle; ?></h1>
+    <h1 class="site-title"><?= $siteTitle; ?></h1>
     <p>Välj bilmodell nedan.</p>
     <div class="four-column-wrapper">
         <?php foreach (array_unique(getCarModel($cars, $renderCarModel)) as $model) : ?>
             <p>
-                <a href=""> <?php echo $model; ?> </a>
+                <a href=""> <?= $model; ?> </a>
             </p>
         <?php endforeach; ?>
     </div>
@@ -19,18 +19,18 @@ $renderCarModel = $_GET['model'];
         <?php foreach ($cars as $car) : ?>
             <?php if ($car['model'] === $renderCarModel) : ?>
                 <div class="car">
-                    <div class="two-column-wrapper" onclick="location.href='<?php echo $car['url']  ?>'">
+                    <div class="two-column-wrapper" onclick="location.href='<?= $car['url']  ?>'">
                         <div class="image-wrapper">
-                            <img src="<?php echo $car['image'] ?>" alt="<?php echo $car['make'] . $car['model'] ?>" />
+                            <img src="<?= $car['image'] ?>" alt="<?= $car['make'] . $car['model'] ?>" />
                         </div>
                         <div>
                             <ul>
-                                <li><?php echo $car['make'] . " " . $car['model'] ?></li>
-                                <li>Mil: <?php echo $car['miles'] ?></li>
-                                <li>Årsmodell: <?php echo $car['year'] ?></li>
-                                <li>Hästkrafter: <?php echo kwToHorsepower($car['kw']); ?></li>
+                                <li><?= $car['make'] . " " . $car['model'] ?></li>
+                                <li>Mil: <?= $car['miles'] ?></li>
+                                <li>Årsmodell: <?= $car['year'] ?></li>
+                                <li>Hästkrafter: <?= kwToHorsepower($car['kw']); ?></li>
                             </ul>
-                            <p class="price">Pris: <?php echo $car['price'] ?> kr</p>
+                            <p class="price">Pris: <?= $car['price'] ?> kr</p>
                         </div>
                     </div>
                 </div>
