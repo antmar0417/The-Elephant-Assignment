@@ -2,7 +2,7 @@
 
 :root {
   --accent-color: #000000;
-  --bg-color: #f3f3f3;
+  --bg-color: #e5e2e2;
   --font-color: #313131;
   --a-color: blue;
 }
@@ -71,6 +71,7 @@ img {
   margin-bottom: 16px;
   background-color: white;
   border-radius: 8px;
+  border: 0.5px solid rgb(163, 163, 163);
 }
 
 .cars .car:hover {
