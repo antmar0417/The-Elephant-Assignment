@@ -1,4 +1,4 @@
-![](https://media.giphy.com/media/xTlJqQwva46dy/giphy.gif)
+<img src="https://media.giphy.com/media/xTlJqQwva46dy/giphy.gif" width="100%">
 
 # Car Sales Site
 
