@@ -6,7 +6,18 @@ Text about the project and why it exists. This would also be a great place to li
 
 # Installation
 
-Add the installation instructions.
+To run this project follow the steps below:
+
+-   Clone the project
+
+```
+git clone https://github.com/antmar0417/the-elephant-assignment.git
+```
+
+-   Start php server `php -S localhost:8000`
+
+-   Open up you browser and paste in this link:
+    `http://localhost:8000/index.php`
 
 # Code Review
 
