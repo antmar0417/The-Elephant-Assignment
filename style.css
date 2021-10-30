@@ -62,7 +62,8 @@ img {
   max-width: 60%;
   max-height: auto;
   border-radius: 4px;
-  margin-top: 20px;
+  margin-top: 5px;
+  border: 1px solid var(--font-color);
 }
 
 .cars .car {
