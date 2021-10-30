@@ -8,7 +8,7 @@ Text about the project and why it exists. This would also be a great place to li
 
 To run this project follow the steps below:
 
--   First clone the project
+-   First clone the project by pasting the command below in your terminal
 
     ```
     git clone https://github.com/antmar0417/the-elephant-assignment.git
