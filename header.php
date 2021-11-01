@@ -1,4 +1,5 @@
 <?php require __DIR__ . '/data.php'; ?>
+<?php require __DIR__ . '/functions.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 
