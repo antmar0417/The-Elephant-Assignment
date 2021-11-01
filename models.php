@@ -2,7 +2,9 @@
 <?php require __DIR__ . '/functions.php'; ?>
 <?php require __DIR__ . '/data.php'; ?>
 <?php
-$renderCarBrand = $_GET['make'];
+if (isset($_GET['make'])) {
+    $renderCarBrand = $_GET['make'];
+}
 ?>
 <main>
     <h1 class="site-title"><?= $siteTitle; ?></h1>
