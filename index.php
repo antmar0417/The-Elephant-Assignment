@@ -1,6 +1,4 @@
 <?php require __DIR__ . '/header.php'; ?>
-<?php require __DIR__ . '/functions.php'; ?>
-<?php require __DIR__ . '/data.php'; ?>
 <main>
     <h1 class="site-title"><?= $siteTitle; ?></h1>
     <p>Välj märke och bilmodell nedan.</p>
@@ -17,7 +15,7 @@
             <div class="car">
                 <div class="two-column-wrapper" onclick="location.href='<?= $car['url']  ?>'">
                     <div class="image-wrapper">
-                        <img src="<?= $car['image'] ?>" alt="<?= $car['make'] . $car['model'] ?>" />
+                        <img src="<?= $car['image'] ?>" alt="<?= "Bilmärke: " . $car['make'] . "Modell: " .  $car['model'] ?>" />
                     </div>
                     <div>
                         <ul>
