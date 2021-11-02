@@ -29,17 +29,21 @@ To run this project follow the steps below:
 
 # Code Review
 
-Code review written by [Jane Doh](https://github.com/username).
+Code review written by [Simon Helier](https://github.com/Sakariash).
 
-1. `example.js:10-15` - Remember to think about X and this could be refactored using the amazing Y function.
-2. `example.js:10-15` - Remember to think about X and this could be refactored using the amazing Y function.
-3. `example.js:10-15` - Remember to think about X and this could be refactored using the amazing Y function.
-4. `example.js:10-15` - Remember to think about X and this could be refactored using the amazing Y function.
-5. `example.js:10-15` - Remember to think about X and this could be refactored using the amazing Y function.
+1. `General:all php files` - Add comments for readability.
+2. `data.php:10` - Structure the array for readability.
+3. `function.php:5` - Incorrect declared parameter in function, should be int ($car['kW']).
+4. `model.php:12` - Link tag used but never declared, could be paragraf .
+5. `model.php` - Almost identical to models.php. Could implement dry code, maybe split the models.php in multiply files and include on model.php?
+6. `index.php:3`, `models.php:7`,`model.php:7` - Color contrast could be better for accessability.
 
+Trying to read code without comments
+
+<img src="https://media.giphy.com/media/d2jjuAZzDSVLZ5kI/giphy-downsized.gif">
 # Testers
 
 Tested by the following people:
 
 1. Jonas Mårtensson
-2. John Doe
+2. Simon Helier
