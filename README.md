@@ -2,7 +2,7 @@
 
 # Car Sales Site
 
-Text about the project and why it exists. This would also be a great place to link the project on One.com.
+That is our first individual assignment. The purpose was to create a PHP application of choice using HTML, CSS, JavaScript, and PHP. I chose to make a car sales site. It includes car brands and models. The vehicles can be sorted by brand and model. When you hover over a certain image it is possible to click on it and see the announcement on blocket.se. Here is the site address: https://antonmarinov.se/the-elephant-assignment/
 
 # Installation
 
